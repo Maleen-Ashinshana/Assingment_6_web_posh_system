@@ -146,7 +146,16 @@ body>section>.d1>.col>div>.l1{
         color: white;
         font-weight: bold;
         font-size: 1em;
-
+        border-radius: 10px;
+        border-color: #19A7CE;
+    }
+    body>section>.d1>.col>.table{
+        border: 1px solid black;
+        width: 1000px;
+        height: 300px;
+        position: absolute;
+        left: 400px;
+        top: 450px;
     }
 </style>
 <body>
@@ -212,19 +221,19 @@ body>section>.d1>.col>div>.l1{
             </div>
             <div class="t1">
                 <label class="l1">Customer Id</label>
-                <input type="text" class="form-control"  placeholder="Customer Id" style="text-align: center">
+                <input type="text" class="form-control" id="id" placeholder="Customer Id" style="text-align: center">
             </div>
             <div class="t2">
                 <label class="l2">Customer Name</label>
-                <input type="text" class="form-control"  placeholder="Customer Name" style="text-align: center">
+                <input type="text" class="form-control" id="name" placeholder="Customer Name" style="text-align: center">
             </div>
             <div class="t3">
                 <label class="l3">Customer Address</label>
-                <input type="text" class="form-control"  placeholder="Customer Address" style="text-align: center">
+                <input type="text" class="form-control" id="adderss" placeholder="Customer Address" style="text-align: center">
             </div>
             <div class="t4">
                 <label class="l4">Customer Salary</label>
-                <input type="text" class="form-control"  placeholder="Customer Salary" style="text-align: center">
+                <input type="text" class="form-control" id="salary" placeholder="Customer Salary" style="text-align: center">
             </div>
 <!--            <button type="button" class="btn btn-primary" id="btnAdd">save</button>
             <button type="button" class="btn btn-secondary" id="btnDelete">Delete</button>
@@ -234,11 +243,41 @@ body>section>.d1>.col>div>.l1{
             <button type="button" class="b1" id="button2">Delete</button>
             <button type="button" class="b1" id="button3" style="color: white">Update</button>
             <button type="button" class="b1" id="button4">Search</button>
+            <table class="table">
+                <thead style="background-color: #AFD3E2">
+                <tr>
+                    <th scope="col"style="color: white" id="i">Customer Id</th>
+                    <th scope="col"style="color: white" id="n">Name</th>
+                    <th scope="col"style="color: white" id="g">Address</th>
+                    <th scope="col"style="color: white" id="t">Salary</th>
+
+                </tr>
+                </thead>
+                <tbody id="tBody">
+
+                </tbody>
+                <script src="../assect/jquery-3.6.4.min.js"></script>
+                <script>
+                    document.getElementById("button1").addEventListener('click',function () {
+                        console.log(document.getElementById("id").value);
+                        let id=$('#id').val();
+                        let name=$('#name').val();
+                        let address=$('#adderss').val();
+                        let salary=$('#salary').val();
+
+                        $('#tBody').append('<tr'+
+                            '<td>'+id+'</td>'+
+                            '<td>'+name+'</td>'+
+                            '<td>'+address+'</td>'+
+                            '<td>'+salary+'</td>'+
+                            '</tr>')
+
+                    })
+                </script>
+            </table>
 
         </div>
     </div>
 </section>
-
-
 </body>
 </html>
