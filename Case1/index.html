@@ -38,7 +38,7 @@ background-color: #19A7CE;
 transition-duration: 3s;
 border-radius: 10px;
 position: relative;
-right: 100px;
+right: 220px;
 
 
 }
@@ -56,25 +56,98 @@ left: 50px;
         left: 10px;
 
     }
-input{
+section>div>.col>.t1>input{
     position: relative;
     left: 350px;
     bottom: 630px;
     width: 300px;
     height: 40px;
 }
+    section>div>.col>.t2>input{
+        position: absolute;
+       right: 50px;
+        bottom: 600px;
+        width: 300px;
+        height: 40px;
+    }
+    section>div>.col>.t3>input{
+        position: absolute;
+        left: 350px;
+        top: 270px;
+        width: 300px;
+        height: 40px;
+    }
+    section>div>.col>.t4>input{
+        position: absolute;
+        right: 50px;
+        top: 270px;
+        width: 300px;
+        height: 40px;
+    }
 body>section>.d1>.col>div>.l1{
     position: absolute;
     left: 350px;
     bottom: 650px;
     font-size: 1.5em ;
     font-weight: bold;
-
 }
+    body>section>.d1>.col>div>.l2{
+        position: absolute;
+        right: 190px;
+        bottom: 650px;
+        font-size: 1.5em ;
+        font-weight: bold;
+    }
+    body>section>.d1>.col>div>.l3{
+        position: absolute;
+        left: 350px;
+        top: 230px;
+        font-size: 1.5em ;
+        font-weight: bold;
+    }
+    body>section>.d1>.col>div>.l4{
+        position: absolute;
+        right: 190px;
+        top: 230px;
+        font-size: 1.5em ;
+        font-weight: bold;
+    }
+    body>section>.d1>.col>#button1{
+        width: 130px;
+        height: 50px;
+        position: absolute;
+        left: 380px;
+        top: 350px;
+    }
+    body>section>.d1>.col>#button2{
+        width: 130px;
+        height: 50px;
+        position: absolute;
+        left: 580px;
+        top: 350px;
+    }
+    body>section>.d1>.col>#button3{
+        width: 130px;
+        height: 50px;
+        position: absolute;
+        left: 780px;
+        top: 350px;
+        color: black;
+    }
+    body>section>.d1>.col>#button4{
+        width: 130px;
+        height: 50px;
+        position: absolute;
+        right: 400px;
+        top: 350px;
+    }
+    body>section>.d1>.col>.b1{
+        background-color: #19A7CE;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
 
-
-
-
+    }
 </style>
 <body>
 <div class="row">
@@ -141,13 +214,31 @@ body>section>.d1>.col>div>.l1{
                 <label class="l1">Customer Id</label>
                 <input type="text" class="form-control"  placeholder="Customer Id" style="text-align: center">
             </div>
-            <div class="t1">
-                <label class="l1">Customer Id</label>
-                <input type="text" class="form-control"  placeholder="Customer Id" style="text-align: center">
+            <div class="t2">
+                <label class="l2">Customer Name</label>
+                <input type="text" class="form-control"  placeholder="Customer Name" style="text-align: center">
             </div>
+            <div class="t3">
+                <label class="l3">Customer Address</label>
+                <input type="text" class="form-control"  placeholder="Customer Address" style="text-align: center">
+            </div>
+            <div class="t4">
+                <label class="l4">Customer Salary</label>
+                <input type="text" class="form-control"  placeholder="Customer Salary" style="text-align: center">
+            </div>
+<!--            <button type="button" class="btn btn-primary" id="btnAdd">save</button>
+            <button type="button" class="btn btn-secondary" id="btnDelete">Delete</button>
+            <button type="button" class="btn btn-success"id="btnUpdate">Update</button>
+            <button type="button" class="btn btn-danger"id="btnre">Resit</button><br>-->
+            <button type="button" class="b1" id="button1" >Add</button>
+            <button type="button" class="b1" id="button2">Delete</button>
+            <button type="button" class="b1" id="button3" style="color: white">Update</button>
+            <button type="button" class="b1" id="button4">Search</button>
+
         </div>
     </div>
 </section>
+
 
 </body>
 </html>
