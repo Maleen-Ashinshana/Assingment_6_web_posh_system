@@ -203,8 +203,49 @@
             right: 10px;
             top: 80px;
         }
+        body>.totale-board>.h4{
+            color: #0d6efd;
+            text-align: center;
+        }
+        body>.totale-board>.cash{
+            position: absolute;
+            left: 150px;
+        }
+        body>.totale-board>#cash{
+            position: absolute;
+            top: 70px;
+            width: 150px;
+            left: 100px;
+        }
+        body>.totale-board>.discount{
+            position: absolute;
+            left: 150px;
+            top: 120px;
+        }
+        body>.totale-board>.form-select-discount{
+            position: absolute;
+            bottom: 130px;
+            left: 100px;
+            width: 150px;
+        }
+        body>.totale-board>.balance{
+            position: absolute;
+            bottom: 95px;
+            left: 150px;
+        }
+        body>.totale-board>#Balance{
+            width: 150px;
+            position: absolute;
+            bottom: 50px;
+            left: 100px;
+        }
+        body>.totale-board>.btn-primary{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 10px;
 
-
+        }
 
     </style>
 </head>
@@ -307,7 +348,19 @@
     <button type="button" class="btn btn-primary">Add</button>
 </div>
 <div class="totale-board">
-
+    <h4 class="h4">Total:195865/=</h4>
+    <label class="cash">Cash</label>
+    <input type="text" class="form-control" id="cash" style="text-align: center">
+    <label class="discount">Discount</label>
+    <select class="form-select-discount" aria-label="Default select example">
+        <option selected>discount</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <label class="balance">Balance</label>
+    <input type="text" class="form-control" id="Balance" style="text-align: center">
+    <button type="button" class="btn btn-primary">Pay</button>
 </div>
 </body>
 </html>
