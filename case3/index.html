@@ -12,9 +12,9 @@
             margin: 0;
             padding: 0;
         }
-        div{
+/*        div{
             border: 2px solid black;
-        }
+        }*/
         body>.row>.col>h2{
             color: #146C94;
             text-align: center;
@@ -246,6 +246,13 @@
             border-radius: 10px;
 
         }
+        body>.table{
+            position: absolute;
+            left: 310px;
+            bottom: 300px;
+            height: 50px;
+            width: 1210px;
+        }
 
     </style>
 </head>
@@ -362,5 +369,20 @@
     <input type="text" class="form-control" id="Balance" style="text-align: center">
     <button type="button" class="btn btn-primary">Pay</button>
 </div>
+<table class="table">
+    <thead style="background-color: #AFD3E2">
+    <tr>
+        <th scope="col"style="color: white" id="i">Item Code</th>
+        <th scope="col"style="color: white" id="n">Item Name</th>
+        <th scope="col"style="color: white" id="g">Price</th>
+        <th scope="col"style="color: white" id="t">Qty</th>
+        <th scope="col"style="color: white" id="h">Total</th>
+
+    </tr>
+    </thead>
+    <tbody id="tBody">
+
+    </tbody>
+</table>
 </body>
 </html>
