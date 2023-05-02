@@ -123,11 +123,88 @@
         body>.OrderB{
             border: 1px solid black;
             width: 400px;
-            height: 350px;
+            height: 300px;
             position: absolute;
-            left: 750px;
+            left: 730px;
             top: 80px;
         }
+        body>.OrderB>.form-select{
+            /*width: 100px;
+            height: 40px;*/
+            position: absolute;
+            top: 70px;
+            left: 0px;
+        }
+        body>.OrderB>.form-select>.Item-code{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        body>.OrderB>.Item-Name{
+            position: absolute;
+            top: 120px;
+            left: 5px;
+        }
+        body>.OrderB>#Item-Name{
+            position: absolute;
+            top: 150px;
+            left: 5px;
+            width: 100px;
+            height: 30px;
+        }
+        body>.OrderB>.Price{
+            position: absolute;
+            top: 120px;
+            left: 170px;
+        }
+        body>.OrderB>#Price{
+            position: absolute;
+            top: 150px;
+            left: 170px;
+            width: 100px;
+            height: 30px;
+        }
+        body>.OrderB>.Qty{
+            position: absolute;
+            top: 120px;
+            left: 340px;
+        }
+        body>.OrderB>#Qty{
+            position: absolute;
+            top: 150px;
+            left: 320px;
+            width: 70px;
+            height: 30px;
+        }
+
+        body>.OrderB>.Order-Qty{
+            position: absolute;
+            top: 190px;
+            left: 10px;
+        }
+        body>.OrderB>#Order-Qty{
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            width: 150px;
+            height: 30px;
+        }
+        body>.OrderB>.btn-primary{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 10px;
+        }
+        body>.totale-board{
+            border: 1px solid black;
+            width: 350px;
+            height: 300px;
+            position: absolute;
+            right: 10px;
+            top: 80px;
+        }
+
+
 
     </style>
 </head>
@@ -211,6 +288,26 @@
     <div class="sub-board2" style="background-color: #AFD3E2">
         <h3 style="text-align: center">Order Details</h3>
     </div>
+    <select class="form-select" aria-label="Default select example">
+        <label class="Item-code">Item</label>
+        <option selected>Item Code</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <label class="Item-code">Item Code</label>
+    <label class="Item-Name">Item Name</label>
+    <input type="text" class="form-control" id="Item-Name" style="text-align: center">
+    <label class="Price">Price</label>
+    <input type="text" class="form-control" id="Price" style="text-align: center">
+    <label class="Qty">Qty</label>
+    <input type="text" class="form-control" id="Qty" style="text-align: center">
+    <label class="Order-Qty">Order Qty</label>
+    <input type="text" class="form-control" id="Order-Qty" style="text-align: center">
+    <button type="button" class="btn btn-primary">Add</button>
+</div>
+<div class="totale-board">
+
 </div>
 </body>
 </html>
